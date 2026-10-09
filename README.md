@@ -1,10 +1,18 @@
 # Ashish Verma portfolio prototype
 
-Open `index.html` in a browser. Keep the `assets/` folder beside it so the portrait, gallery, and drawing load correctly.
+Open `index.html` in a browser. Keep `src/` and `assets/` beside it so the styles, animations, portrait, gallery, and drawing load correctly. This is a buildless static site; no framework or install step is required.
+
+## Source structure
+
+- `index.html` — page content and section markup
+- `src/styles.css` — layout, colors, responsive styles, and CSS animation
+- `src/main.js` — gallery filters, project details, scroll effects, and building animation
+- `src/boot.js` — early page setup for reveal effects
+- `assets/` — portrait, concept images, and elevation artwork
 
 ## What to replace for a public portfolio
 
-- The six gallery entries are explicitly labeled concept studies. Replace the names, images, descriptions, and tags in the `projects` array in `index.html` with Ashish's verified work.
+- The six gallery entries are explicitly labeled concept studies. Replace the names, images, descriptions, and tags in the `projects` array in `src/main.js` with Ashish's verified work.
 - Add Ashish's confirmed job titles, employers, and dates to the experience timeline. Its current stages describe the development of his drafting practice, not verified employment history.
 - Add verified email, phone, location, and project credits before publishing. The source file contained example contact details and sample employment claims, so this prototype does not repeat them.
 - Confirm the six listed tools and the first-person capability, workflow, and vision copy with Ashish before publishing it as a factual biography.
