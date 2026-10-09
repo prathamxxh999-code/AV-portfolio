@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 920" role="img" aria-label="Architectural facade elevation study">
+  <defs>
+    <pattern id="grid" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M35 0H0V35" fill="none" stroke="#50605c" stroke-width=".5" opacity=".35"/></pattern>
+    <pattern id="windows" width="76" height="69" patternUnits="userSpaceOnUse"><rect width="76" height="69" fill="#28373a"/><rect x="10" y="11" width="56" height="47" fill="#182b30" stroke="#ca9772" stroke-width="1.2"/><path d="M38 11v47M10 46h56" stroke="#8f9e98" stroke-width="1"/><path d="M12 15h24v30H12z" fill="#bc855e" opacity=".22"/></pattern>
+  </defs>
+  <rect width="700" height="920" fill="#202b2c"/><rect width="700" height="920" fill="url(#grid)"/>
+  <g fill="none" stroke="#d0a483" stroke-width="1.2" opacity=".9">
+    <path d="M90 790H625M106 804H610M130 770V165H561V770M130 165l31-30h431l-31 30M561 165l31-30v635l-31 0"/>
+    <path d="M130 234H561M130 303H561M130 372H561M130 441H561M130 510H561M130 579H561M130 648H561M130 717H561"/>
+    <path d="M145 165V770M221 165V770M297 165V770M373 165V770M449 165V770M525 165V770"/>
+    <path d="M145 230H525M145 299H525M145 368H525M145 437H525M145 506H525M145 575H525M145 644H525M145 713H525" opacity=".7"/>
+  </g>
+  <rect x="145" y="172" width="380" height="552" fill="url(#windows)" opacity=".85"/>
+  <g stroke="#dfb190" stroke-width="2" fill="none"><path d="M130 234H561M130 372H561M130 510H561M130 648H561M130 770H561"/><path d="M130 165H561"/></g>
+  <g stroke="#9aa9a0" stroke-width=".8" fill="none" opacity=".8"><path d="M75 165V770M70 165H82M70 770H82M85 234H130M85 372H130M85 510H130M85 648H130M612 135V770M607 135H618M607 770H618M130 826H561M130 820V832M561 820V832"/></g>
+  <g fill="#cba484" font-family="Arial,sans-serif" letter-spacing="3"><text x="90" y="94" font-size="13">FACADE STUDY / 06</text><text x="90" y="119" font-size="10" opacity=".7">ORTHOGRAPHIC ELEVATION</text><text x="90" y="865" font-size="10">GRID / LEVEL / RHYTHM</text></g>
+  <g fill="#b3bdb5" font-family="Arial,sans-serif" font-size="9" letter-spacing="2"><text x="48" y="473" transform="rotate(-90 48 473)">DATUM + 28.400</text><text x="325" y="845">FACADE WIDTH</text></g>
+</svg>
