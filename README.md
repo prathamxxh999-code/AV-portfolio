@@ -1,34 +1,42 @@
-# Ashish Verma portfolio prototype
+# Ashish Verma portfolio
 
-Open `index.html` in a browser. Keep `src/` and `assets/` beside it so the styles, animations, portrait, gallery, and drawing load correctly. This is a buildless static site; no framework or install step is required.
+Open `index.html` in a browser. Keep `src/` and `assets/` beside it. This is a static site with no framework or install step.
 
-## Source structure
+## Site contents
 
-- `index.html` — page content and section markup
-- `src/styles.css` — layout, colors, responsive styles, and CSS animation
-- `src/main.js` — gallery filters, project details, scroll effects, and building animation
-- `src/boot.js` — early page setup for reveal effects
-- `assets/` — portrait, concept images, and elevation artwork
+- Personal portrait hero with project and CV links and a 3+ years experience figure.
+- Multilingual intro and a drawing-process feature with text on the left and the supplied blueprint film on the right. `assets/blueprint-construction.mp4` is a web-ready version of the 4K file supplied by the user, with the audio omitted and no visual content added. `assets/blueprint-poster.jpg` is a frame from that film.
+- Seven project studies with category filters and dedicated pages (`project.html?slug=...`).
+- Project pages with overview, scope, role, concept, technical drawing, drawing/render comparison where available, challenge, and outcome.
+- Full-screen drawing viewer with zoom, pan, touch pinch, reset, and keyboard controls; a rotatable schematic massing study on the Meridian page.
+- Experience, tools, workflow, profile, vision, and contact sections.
+- Downloadable portfolio and CV PDFs in `assets/`. The CV is linked in the hero and contact area; the portfolio PDF is linked on project pages.
 
-## What to replace for a public portfolio
+## Source files
 
-- The six gallery entries are explicitly labeled concept studies. Replace the names, images, descriptions, and tags in the `projects` array in `src/main.js` with Ashish's verified work.
-- Add Ashish's confirmed job titles, employers, and dates to the experience timeline. Its current stages describe the development of his drafting practice, not verified employment history.
-- Add verified email, phone, location, and project credits before publishing. The source file contained example contact details and sample employment claims, so this prototype does not repeat them.
-- Confirm the six listed tools and the first-person capability, workflow, and vision copy with Ashish before publishing it as a factual biography.
-- `assets/ashish-portrait.jpg` is the exact profile photo embedded in the supplied HTML. The visible `assets/ashish-cutout.png` was derived from that photo to remove its background; keep both files.
-- `assets/hero-building.webp` is a generated architectural visualization in the concept gallery, not a photograph of a completed project.
+- `index.html` — homepage and project gallery.
+- `project.html` — project page template.
+- `src/styles.css` and `src/project.css` — styles and responsive layout.
+- `src/main.js`, `src/boot.js`, `src/intro.js`, `src/plan-video.js` — homepage controls, intro, and video playback.
+- `src/projects.js` — the seven project records.
+- `src/project-page.js` — project rendering, drawing viewer, and 3D interaction.
+- `assets/` — portrait, images, code-drawn SVG sheets, video, and PDFs.
 
-## Generated visuals
+## Editorial notes for the owner
 
-The five concept images were created with the built-in image generation tool and converted to WebP for the website. The prompt set was:
+The portfolio is a visual structure awaiting Ashish's confirmed details. Replace the current dates, roles, 3+ experience figure, education and certification copy, email, phone, LinkedIn, and CV contact details before using it as a factual public profile. The project images and stories are self-initiated design studies, not documentation of completed client commissions. Update `src/projects.js` and the PDFs when verified work arrives.
 
-1. **hero-building.webp** — A premium architectural visualization of a contemporary mid-rise concrete-and-glass residence at dusk, with warm interior light, crisp stepped volumes, and dark negative space; no people, text, or logos.
-2. **villa-study.webp** — A portrait editorial visualization of a warm stone hillside villa with interlocking volumes, a long cantilever, bronze frames, and golden-hour light; no people, text, or logos.
-3. **pavilion-axon.webp** — A precise exploded axonometric of a small contemporary cultural pavilion, separating roof, steel frame, floor plates, glazing, and stairs on an ivory presentation sheet; no labels or logos.
-4. **residence-plan.webp** — A top-down contemporary residential floor-plan presentation board with rooms, stair core, furniture, terrace, and landscape on a charcoal ground; crisp linework and no labels.
-5. **studio-interior.webp** — A wide architectural interior visualization of a double-height creative studio with mezzanine, drafting tables, grid windows, exposed structure, and warm daylight; no people or logos.
+`assets/ashish-portrait.jpg` came from the supplied HTML. `assets/ashish-cutout.png` is an edited transparent-background version of that portrait.
 
-The facade elevation is a code-drawn SVG, and the animated building sequence is built in the page with SVG and CSS.
+## Generated design visuals
 
-The hero portrait cutout was generated by editing the supplied Ashish photo: remove its dark studio background, output a transparent PNG, and retain the face, expression, hair, pose, clothing, and framing. This file is an edited portrait; compare it with `ashish-portrait.jpg` before public use.
+The concept images were created for this portfolio. The prompt directions were:
+
+1. `hero-building.webp` — contemporary mid-rise residence at dusk with stepped concrete and glass volumes.
+2. `villa-study.webp` — warm stone hillside villa with cantilevered terraces.
+3. `pavilion-axon.webp` — exploded axonometric cultural pavilion assembly.
+4. `residence-plan.webp` — top-down residential plan presentation.
+5. `studio-interior.webp` — double-height creative studio interior.
+6. `retail-atrium.png` — premium two-level retail atrium interior with warm daylight and precise architectural finishes.
+
+The SVG technical sheets are code-drawn. The portrait cutout was made by removing the background from the supplied Ashish photo while retaining his appearance and pose.

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121b1e">
+  <meta name="description" content="An architectural project study from Ashish Verma's design portfolio.">
+  <title>Project study — Ashish Verma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="src/project.css">
+</head>
+<body class="case-body">
+  <a class="skip" href="#case-main">Skip to project</a>
+  <nav class="case-nav" aria-label="Project navigation">
+    <a class="case-back" href="index.html#work">← All projects</a>
+    <a class="case-brand" href="index.html#top">ASHISH<span> / </span>VERMA</a>
+    <a class="case-download" href="assets/ashish-verma-portfolio.pdf" download>Portfolio PDF ↓</a>
+  </nav>
+  <main id="case-main">
+    <section class="case-hero">
+      <div class="case-container">
+        <div class="case-label"><span id="project-number">PROJECT 01</span><span class="case-demo">Design study</span></div>
+        <h1 id="project-title">Project study</h1>
+        <p class="case-intro" id="project-overview"></p>
+        <div class="case-meta" aria-label="Project overview">
+          <div><span>Project type</span><strong id="project-type"></strong></div>
+          <div><span>Project scope</span><strong id="project-scope"></strong></div>
+          <div><span>Location</span><strong id="project-location"></strong></div>
+          <div><span>Year</span><strong id="project-year"></strong></div>
+        </div>
+      </div>
+    </section>
+    <figure class="case-cover"><img id="project-cover" alt=""><figcaption>Project visualization / design study</figcaption></figure>
+    <section class="case-section case-container case-story">
+      <div class="case-section-head"><span>01 / Concept &amp; references</span><h2>The idea behind the study.</h2></div>
+      <div class="case-story-copy"><p id="project-concept"></p><div class="case-role"><span>My role</span><p id="project-role"></p></div></div>
+    </section>
+    <section class="case-section case-drawing-section">
+      <div class="case-container">
+        <div class="case-section-head"><span>02 / Technical drawings</span><h2>Read the lines up close.</h2></div>
+        <p class="case-section-lead">Open a drawing to explore the linework, layout, and details up close.</p>
+        <div class="case-drawings" id="project-drawings"></div>
+      </div>
+    </section>
+    <section class="case-section case-container" id="comparison-section">
+      <div class="case-section-head"><span>03 / Drawing &amp; render</span><h2>Two ways to see one idea.</h2></div>
+      <p class="case-section-lead">See how the drawing language connects to the final visual direction.</p>
+      <div class="case-comparison"><figure><img id="comparison-drawing" alt=""><figcaption>2D / concept drawing</figcaption></figure><figure><img id="comparison-render" alt=""><figcaption>3D / visualization concept</figcaption></figure></div>
+    </section>
+    <section class="case-section case-container" id="render-only-section" hidden>
+      <div class="case-section-head"><span>03 / Final visualization</span><h2>Visual outcome.</h2></div>
+      <p class="case-section-lead" id="render-only-note"></p>
+    </section>
+    <section class="case-section case-model-section" id="model-section" hidden>
+      <div class="case-container case-model-grid"><div><div class="case-section-head"><span>04 / Interactive 3D</span><h2>Turn the massing around.</h2></div><p>Explore the building's form from different angles. Drag to rotate, or use the controls.</p><div class="model-controls"><button type="button" id="model-left" aria-label="Rotate model left">← Rotate</button><button type="button" id="model-right" aria-label="Rotate model right">Rotate →</button><button type="button" id="model-reset">Reset view</button></div></div><canvas id="massing-canvas" width="820" height="600" aria-label="Interactive schematic residential building massing"></canvas></div>
+    </section>
+    <section class="case-section case-container case-result">
+      <div><span class="case-small-label">05 / Technical challenge</span><h2>Problem to resolve.</h2><p id="project-challenge"></p></div>
+      <div><span class="case-small-label">06 / Outcome</span><h2>What the study delivers.</h2><p id="project-outcome"></p></div>
+    </section>
+    <section class="case-end"><div class="case-container"><span>Next project</span><a id="next-project" href="index.html#work"><span id="next-title">Explore another project</span><b aria-hidden="true">↗</b></a><p>Explore more of the work behind the drawings.</p></div></section>
+  </main>
+  <dialog id="drawing-viewer" class="drawing-viewer" aria-label="Full-screen drawing viewer">
+    <div class="viewer-bar"><div><span>Technical drawing / concept study</span><strong id="viewer-title">Drawing</strong></div><div class="viewer-controls"><button type="button" id="zoom-out" aria-label="Zoom out">−</button><span id="zoom-value" aria-live="polite">100%</span><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-reset">Reset</button><button type="button" id="viewer-close" aria-label="Close drawing viewer">×</button></div></div>
+    <div class="viewer-stage" id="viewer-stage"><img id="viewer-image" alt=""></div>
+    <div class="viewer-hint">Scroll or use + / − to zoom · Drag to pan · Esc to close</div>
+  </dialog>
+  <script src="src/projects.js"></script>
+  <script src="src/project-page.js"></script>
+</body>
+</html>
